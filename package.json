@@ -1,50 +1,56 @@
 {
-    "name": "punch-the-clock",
-    "version": "1.0.0",
-    "description": "a weex project",
-    "main": "index.js",
-    "scripts": {
-        "build": "webpack",
-        "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
-        "dev": "weex-builder src dist -w",
-        "serve": "webpack-dev-server --config webpack.dev.js -p --open",
-        "start": "serve -p 12345"
-    },
-    "keywords": [
-        "weex"
-    ],
-    "author": "Ajuan <zhigang.chen@owulia.com>",
-    "license": "MIT",
-    "dependencies": {
-        "vue": "^2.1.8",
-        "vue-router": "^2.1.1",
-        "vuex": "^2.1.1",
-        "vuex-router-sync": "^4.0.1",
-        "weex-html5": "^0.4.1",
-        "weex-vue-render": "^0.11.2"
-    },
-    "devDependencies": {
-        "babel-core": "^6.21.0",
-        "babel-eslint": "^8.0.0",
-        "babel-loader": "^6.2.4",
-        "babel-plugin-add-module-exports": "^0.2.1",
-        "babel-plugin-transform-runtime": "^6.9.0",
-        "babel-preset-es2015": "^6.9.0",
-        "babel-runtime": "^6.9.2",
-        "css-loader": "^0.26.1",
-        "eslint": "^4.7.0",
-        "eslint-config-google": "^0.9.1",
-        "eslint-friendly-formatter": "^3.0.0",
-        "quick-local-ip": "^1.0.7",
-        "serve": "^6.1.0",
-        "vue-loader": "^10.0.2",
-        "vue-template-compiler": "^2.1.8",
-        "webpack": "^2.2.1",
-        "webpack-dev-server": "^2.4.2",
-        "weex-builder": "^0.2.6",
-        "weex-loader": "^0.4.1"
-    },
-    "optionalDependencies": {
-        "ios-deploy": "^1.9.0"
-    }
+  "name": "punch-the-clock",
+  "version": "1.0.0",
+  "description": "a weex project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
+    "dev": "weex-builder src dist -w",
+    "serve": "webpack-dev-server --config webpack.dev.js -p --open",
+    "start": "serve -p 12345"
+  },
+  "keywords": [
+    "weex"
+  ],
+  "author": "Ajuan <zhigang.chen@owulia.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.1.8",
+    "vue-router": "^2.1.1",
+    "vuex": "^2.1.1",
+    "vuex-router-sync": "^4.0.1",
+    "weex-html5": "^0.4.1",
+    "weex-vue-render": "^0.11.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "css-loader": "^0.26.1",
+    "eslint": "^4.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "quick-local-ip": "^1.0.7",
+    "serve": "^6.1.0",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.8.2",
+    "weex-builder": "^0.2.6",
+    "weex-loader": "^0.4.1"
+  },
+  "optionalDependencies": {
+    "ios-deploy": "^1.9.0"
+  }
 }

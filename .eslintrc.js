@@ -11,17 +11,45 @@ module.exports = {
         'sourceType': 'module'
     },
     globals: {
-        Vue: false,
-        weex: false,
+        'Vue': false,
+        'weex': false,
         document: false,
         navigator: false,
         location: false,
     },
+    plugins: [
+        'html'
+    ],
     rules: {
-        /**要求或禁止 var 声明中的初始化*/
-        // 'no-var': 'error',
+        /**禁用 alert / debugger / caller / callee*/
+        "no-alert": "error",
+        "no-debugger": "error",
+        "no-caller": "error",
 
-        'init-declarations': 2,
+        /**禁用 void / with / label*/
+        "no-void": "warn",
+        "no-with": "warn",
+        "no-labels": "error",
+
+        /**禁止覆盖全局变量*/
+        "no-global-assign": ["error"],
+
+        /**不可隐式创建全局变量*/
+        "no-implicit-globals": "error",
+
+        /**禁用 window 和 global 变量*/
+        "no-restricted-globals": ["error", "window", "global"],
+
+        /**不存在没有用到的变量*/
+        'no-unused-vars': ['warn', {
+            'vars': 'local',
+            'caughtErrors': 'none',
+            'args': 'none'
+        }],
+
+        /**不可以有相同的 case 语句*/
+        'no-duplicate-case': 'warn',
+
         // 强制使用单引号
         'quotes': ['error', 'single'],
 
@@ -67,4 +95,4 @@ module.exports = {
         // TODO 关闭 强制方法必须返回值，TypeScript强类型，不配置
         // 'consistent-return': 0
     }
-}
+};

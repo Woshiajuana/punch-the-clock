@@ -5,3 +5,4 @@ temp/
 ## output files
 dist/
 punch-the-clock.iml
+platforms/android/
