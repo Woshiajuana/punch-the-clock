@@ -1,5 +1,5 @@
 {
-    "name": "xxx",
+    "name": "punch-the-clock",
     "version": "1.0.0",
     "description": "a weex project",
     "main": "index.js",
@@ -8,7 +8,7 @@
         "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
         "dev": "weex-builder src dist -w",
         "serve": "webpack-dev-server --config webpack.dev.js -p --open",
-        "start": "serve -p 13140"
+        "start": "serve -p 12345"
     },
     "keywords": [
         "weex"
