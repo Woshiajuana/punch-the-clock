@@ -7,6 +7,7 @@
     "build": "webpack",
     "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
     "dev": "weex-builder src dist -w",
+    "dev2": "webpack --watch & serve -p 12590",
     "serve": "webpack-dev-server --config webpack.dev.js -p --open",
     "start": "serve -p 12345"
   },

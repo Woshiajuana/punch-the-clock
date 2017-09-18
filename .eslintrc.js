@@ -38,7 +38,7 @@ module.exports = {
         "no-implicit-globals": "error",
 
         /**禁用 window 和 global 变量*/
-        "no-restricted-globals": ["error", "window", "global"],
+        // "no-restricted-globals": ["error", "window", "global"],
 
         /**不存在没有用到的变量*/
         'no-unused-vars': ['warn', {
@@ -50,7 +50,7 @@ module.exports = {
         /**不可以有相同的 case 语句*/
         'no-duplicate-case': 'warn',
 
-        // 强制使用单引号
+        /**强制使用单引号*/
         'quotes': ['error', 'single'],
 
         /**要求使用分号*/
